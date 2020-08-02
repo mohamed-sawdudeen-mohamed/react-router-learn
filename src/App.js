@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { Link, HashRouter } from 'react-router-dom';
+import { Link, BrowserRouter } from 'react-router-dom';
 import Routes from './Routes';
 
 class App extends Component {
   render() {
     return (
-      <HashRouter>
+      <BrowserRouter>
         <div>
           <div>
             <Link to="/">Home</Link>
@@ -13,7 +13,7 @@ class App extends Component {
           </div>
           <Routes />
         </div>
-      </HashRouter>
+      </BrowserRouter>
     );
   }
 }
